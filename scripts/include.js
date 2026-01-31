@@ -9,8 +9,8 @@ const loader = async (id, file) => {
 };
 if (pageType === "public") {
   if (location.pathname === "/" || location.pathname === "/frontend/") {
-    loader("header", "./components/header-public.html");
-    loader("footer", "./components/footer.html");
+    loader("header", "/components/header-public.html");
+    loader("footer", "/components/footer.html");
     const dateSpan = document.getElementById("date");
     console.log(dateSpan);
   } else {
