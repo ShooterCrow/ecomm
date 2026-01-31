@@ -13,13 +13,13 @@ async function loadAllIncludes() {
     if (location.pathname === "/" || location.pathname === "/frontend/") {
       await loader("header", "./components/header-public.html");
       await loader("footer", "./components/footer.html");
-      headerFunction();
+    //   headerFunction();
       const dateSpan = document.getElementById("date");
       console.log(dateSpan);
     } else {
       await loader("header", "../components/header-public.html");
       await loader("footer", "../components/footer.html");
-      headerFunction();
+    //   headerFunction();
       const dateSpan = document.getElementById("date");
       console.log(dateSpan);
     }

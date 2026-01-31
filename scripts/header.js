@@ -1,4 +1,4 @@
-const headerFunction = () => {
+// const headerFunction = () => {
   const hambuger = document.querySelector(".hambuger");
   console.log(hambuger);
   const mobileNav = document.querySelector(".mobile-nav");
@@ -35,4 +35,4 @@ const headerFunction = () => {
   if (themeIcon) {
     themeIcon.addEventListener("change", () => toggleTheme(themeIcon));
   }
-};
+// };
