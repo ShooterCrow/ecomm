@@ -80,6 +80,59 @@ body {
     border: 1px solid red;
 }
 
+.promotion-element{
+    width: 300px;
+    height: 320px;
+    background-color:  var(--background-color);
+    border: 1px solid var--border-color;
+    border-radius: 10px;
+}
+.price-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.pro-description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 12px 10px;
+}
+.pro-location{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 0px 12px;
+    gap: 10px;
+    display: flex;
+}
+.price-tag{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pro-image{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.promoelement-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.promos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 @media (max-width: 760px) {
   .hero {
     margin-top: 20px;

@@ -23,3 +23,4 @@ if (pageType === "public") {
 if (pageType === "private") {
   loader("header", "/components/header.private.html");
 }
+
