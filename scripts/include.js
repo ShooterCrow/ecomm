@@ -1,6 +1,6 @@
 const pageType = document.body.dataset.layout;
 
-let includeFinished = false
+let includeFinished = false;
 
 const loader = async (id, file) => {
   const response = await fetch(file);
@@ -9,13 +9,15 @@ const loader = async (id, file) => {
 };
 if (pageType === "public") {
   if (location.pathname === "/" || location.pathname === "/frontend/") {
-    loader("header", "./components/header-public.html");
-    loader("footer", "./components/footer.html");
+    await loader("header", "./components/header-public.html");
+    await loader("footer", "./components/footer.html");
+    headerFunction();
     const dateSpan = document.getElementById("date");
     console.log(dateSpan);
   } else {
-    loader("header", "../components/header-public.html");
-    loader("footer", "../components/footer.html");
+    await loader("header", "../components/header-public.html");
+    await loader("footer", "../components/footer.html");
+    headerFunction();
     const dateSpan = document.getElementById("date");
     console.log(dateSpan);
   }
@@ -24,5 +26,4 @@ if (pageType === "private") {
   loader("header", "/components/header.private.html");
 }
 
-includeFinished = true
-
+includeFinished = true;
