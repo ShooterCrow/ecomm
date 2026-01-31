@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
   const hambuger = document.querySelector(".hambuger");
   console.log(hambuger);
   const mobileNav = document.querySelector(".mobile-nav");
@@ -28,4 +28,4 @@ window.onload = function () {
 
   navTheme.addEventListener("change", () => toggleTheme(navTheme));
   themeIcon.addEventListener("change", () => toggleTheme(themeIcon));
-};
+});
