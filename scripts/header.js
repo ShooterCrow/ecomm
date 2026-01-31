@@ -1,4 +1,4 @@
-setTimeout(() => {
+if (includeFinished) {
   document.addEventListener("DOMContentLoaded", function () {
     const hambuger = document.querySelector(".hambuger");
     console.log(hambuger);
@@ -37,5 +37,5 @@ setTimeout(() => {
       themeIcon.addEventListener("change", () => toggleTheme(themeIcon));
     }
   });
-  alert()
-}, 5500);
+  alert("Header loaded successfully!");
+};

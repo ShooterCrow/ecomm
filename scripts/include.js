@@ -1,6 +1,6 @@
 const pageType = document.body.dataset.layout;
 
-console.log(location.pathname);
+let includeFinished = false
 
 const loader = async (id, file) => {
   const response = await fetch(file);
@@ -23,4 +23,6 @@ if (pageType === "public") {
 if (pageType === "private") {
   loader("header", "/components/header.private.html");
 }
+
+includeFinished = true
 
