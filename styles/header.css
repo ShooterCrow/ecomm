@@ -148,25 +148,25 @@ nav a {
 }
 
 .mobile-nav {
-    display: none;
-    flex-direction: column;
-    background-color: var(--background-color);
-    padding: 40px 20px;
-    gap: 15px;
+  display: none;
+  flex-direction: column;
+  background-color: var(--background-color);
+  padding: 40px 20px;
+  gap: 15px;
 }
 
 .mnitem {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--border-color);
+  /* width: %; */
+  padding: 10px;
+  border: 1px solid var(--border-color);
 }
 
 .show {
-    display: flex;
+  display: flex;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 @media (max-width: 760px) {

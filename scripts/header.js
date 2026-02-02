@@ -19,9 +19,12 @@ const headerFunction = () => {
       }
     });
   }
-
   function toggleTheme(type) {
-    console.log(type.value);
+    if (type.value === "Dark Mode 🌙") {
+      document.documentElement.classList.add("darkTheme");
+    } else if (type.value === "Light Mode ☀️") {
+      document.documentElement.classList.remove("darkTheme");
+    }
   }
 
   if (navTheme) {
